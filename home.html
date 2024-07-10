@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hackathon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AI Hackathon</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#tab1">Upload Problem</a></li>
+            <li><a href="#tab2">Nominate Problem</a></li>
+            <li><a href="#tab3">Upload Solution</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <section id="tab1">
+            <h2>Upload Problem</h2>
+            <form id="problemForm">
+                <label for="problemName">Problem Name:</label>
+                <input type="text" id="problemName" name="problemName" required><br>
+                <label for="problemDescription">Problem Description:</label>
+                <textarea id="problemDescription" name="problemDescription" required></textarea><br>
+                <label for="problemFile">Upload File:</label>
+                <input type="file" id="problemFile" name="problemFile" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="tab2">
+            <h2>Nominate Problem</h2>
+            <form id="nominateForm">
+                <label for="selectProblem">Select Problem:</label>
+                <select id="selectProblem" name="selectProblem">
+                    <!-- Options will be populated by JavaScript -->
+                </select><br>
+                <button type="submit">Nominate</button>
+            </form>
+        </section>
+        <section id="tab3">
+            <h2>Upload Solution</h2>
+            <form id="solutionForm">
+                <label for="selectProblemForSolution">Select Problem:</label>
+                <select id="selectProblemForSolution" name="selectProblemForSolution">
+                    <!-- Options will be populated by JavaScript -->
+                </select><br>
+                <label for="solutionFile">Upload Solution File:</label>
+                <input type="file" id="solutionFile" name="solutionFile" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
